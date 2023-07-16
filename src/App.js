@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [name, setName] = useState("")
+  const [year, setYear] = useState(0)
+  
+  const formdata = () => {
+    const data = {name, year}
+    console.log(data)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <form onSubmit={e=> {e.preventDefault() ; formdata()}}>
+          <label>Enter Your Info</label>
+          <input type="text" name="name" value={name} onChange={e=>setName(e.target.value)} placeholder="Name" />
+          <input type="number" name="year" value={year} onChange={e=>setYear(e.target.value)} placeholder="1897" />
+          <button type="submit">Submit</button>
+        </form>
+
       </header>
     </div>
   );
 }
 
 export default App;
+
