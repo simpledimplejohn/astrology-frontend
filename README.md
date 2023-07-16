@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Astrology 
+### Calculating Astrology on Data Sets
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#### QUESTIONS WE NEED TO KNOW
+- Can you get moon/venus signs from a birthday/year alone without knowing time/place
+- Which Sign is compatable with other signs
+- Top 
+    - Sun
+    - Moon
+    - Venus
+    - Mars
 
-In the project directory, you can run:
+#### Data
+stored on this spreadsheet:
+[data](https://docs.google.com/spreadsheets/d/1ZclSk-GZu_1vWYCGZm4eIcnBhMskTQxF4Ifa8kDnMGY/edit?usp=sharing)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### SETUP
+[mongodb](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Game plan for working with Alister 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Project Plan
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Individual User
+- user account, store user info
+- Page for user to enter their information
+- page that can display natal chart for users
+- user display visualation of their chart
+- database that holds user data
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Data Sets
+- ability to take in csv data sets
+- statistical analysis of data
+- data visualazation of those data sets
 
-### `npm run eject`
+TOOLS
+- Front End
+  - React
+- API 
+    - Node ?
+    - Express ?
+    - odb driver for database 
+- Database 
+    - Mongodb
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Stretch Goals
+- Deploy to AWS
+    - EC2 for API
+    - Snowflake for database
+    - S3 for front end
+    - Route53 DNS
+    - AWS code pipeline
